@@ -63,3 +63,17 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+#### Installation Steps
+
+1. Clone the repo : `git clone https://github.com/mrrens1107/larav.git`
+2. `$ cd larav`
+3. `$ composer install`
+4. `$ cp .env.example .env`
+5. `$ php artisan key:generate`
+6. Create new MySQL database for this application  
+(with simple command: `$ mysqladmin -uroot -p create larav`)
+7. Set database credentials on `.env` file
+8. `$ php artisan migrate`
+9. `$ php artisan crudbooster:install`
+10. `$ php artisan serve`
